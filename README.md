@@ -1,44 +1,48 @@
-# ΔEPW Visualisation Toolkit for Rhino/Grasshopper
+# ΔEPW Climate-Change Visualisation Toolkit for Rhino/Grasshopper
 
-A set of 10 Climate Change Visualisation (CCV) modules for design using paired EPW files (current vs future). Outputs include ΔT calendar + violin, ΔGHI and ΔIlluminance/Sky Cover charts, Seasonal Sun Path + Overhang optimizer, Psychrometric deltas, Natural Ventilation window analysis, EN 16798 adaptive comfort, and ΔUTCI.
+> Ten Grasshopper modules to compare baseline vs future weather (ΔEPW) using Ladybug Tools.
 
-[![DOI](https://zenodo.org/badge/<your-github-id>.svg)](https://zenodo.org/badge/latestdoi/<your-github-id>)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![Release](https://img.shields.io/github/v/release/emanuelenaboni/The-10-EPW-Climate-Change-Useful-Visualisations-Toolkit)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
+
+## Why
+Design and communication tools for climate-change scenarios (SSP/RCP). Hourly deltas and summaries for early-stage decisions.
 
 ## Requirements
-- Rhino 6/7/8 with Grasshopper
-- Ladybug Tools for Grasshopper **v1.9.0** (recommended)  
-  See install guide and Pollination installer notes.
+- Rhino 6/7/8
+- Ladybug Tools for Grasshopper (tested with LBT 1.9.x)
+- Two EPW files: baseline + scenario (ΔEPW)
 
-## Install
-1. Install Ladybug Tools (LBT) for Grasshopper (see link).
-2. Clone/download this repo.
-3. Open any `.gh` file in `modules/` and set your **paired EPW** inputs.
+## Quick start (2 minutes)
+1. Download the latest release assets from **Releases**.
+2. Open any `.gh` in `/modules`.
+3. Provide paired EPW files (baseline & scenario) as indicated on canvas.
+4. Toggle scenario/intervals; read the on-canvas panels for deltas and interpretation.
 
-## Quickstart
-- Provide two EPW files (baseline & scenario) and select the **scenario toggle** (SSP/RCP).  
-- Each module outputs hourly/seasonal plots and delta stats ready for early-stage design decisions.
-
-## Modules
+## The 10 modules (at a glance)
 1. ΔT Calendar + Violin  
-2. ΔGHI timeseries + hourly‐delta calendar  
+2. ΔGHI Timeseries + Hourly-Delta Calendar  
 3. ΔIlluminance & Sky Cover  
-4. Seasonal Sun Path + Overhang optimizer  
-5. Psychrometric (actual/future/delta)  
-6. Comfort Strategy Stack  
-7. Natural Ventilation (actual/delta + monthly)  
-8. EN 16798 Adaptive Comfort (actual/future/delta)  
-9. ΔUTCI (actual/future/delta)  
+4. Seasonal Sun Path + Overhang Optimizer  
+5. Psychrometric (Actual/Future/Delta)  
+6. Comfort Strategies Stack  
+7. Natural Ventilation (Actual/Delta + Monthly)  
+8. EN 16798 Adaptive Comfort  
+9. ΔUTCI (Actual/Future/Delta)  
 10. Thermal Comfort Strategies (summary)
 
-## Data
-- Use EPW from [EnergyPlus Weather] or CMIP-based ΔEPW datasets. Place in `data/` (see examples).
+## Gallery
+<small>(Add one image per module from `/assets/images`, with alt text.)</small>
 
-## Citing
-Please cite via the `CITATION.cff` or DOI badge above.
+## Notes & limitations
+- Modules visualize deltas; they do **not** replace full simulation.
+- Use appropriate SSP/RCP scenarios and EPW morphing methods.
 
-## Authors
-Emanuele Naboni (ORCID: https://orcid.org/0000-0002-6381-6491) — Marcello Turrini 
+## Cite
+If you use this toolkit, please cite (see **Cite this repository** sidebar or `CITATION.cff`).
+
+## Acknowledgements
+In collaboration with M. Turrini. Built on Ladybug Tools and the EPW ecosystem.
 
 ## License
-MIT
+MIT – see [LICENSE](./LICENSE).
